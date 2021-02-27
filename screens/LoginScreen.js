@@ -64,7 +64,6 @@ export default function LoginScreen({ navigation }) {
           autoCapitalize="none"
           keyboardType="email-address"
           textContentType="emailAddress"
-          autoFocus={true}
         />
         <FormField
           name="password"
@@ -99,7 +98,7 @@ export default function LoginScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     padding: 15,
-    backgroundColor: Colors.mediumGrey
+    backgroundColor: 'lightblue'
   },
   footerButtonContainer: {
     marginVertical: 15,

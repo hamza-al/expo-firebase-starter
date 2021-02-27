@@ -11,8 +11,7 @@ export default function WelcomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.logoContainer}>
-        <Image source={require('../assets/flame.png')} style={styles.logo} />
-        <Text style={styles.subtitle}>Expo Firebase Starter</Text>
+        <Text style={styles.subtitle}>VacTrack</Text>
       </View>
       <View style={styles.buttonContainer}>
         <AppButton title="Login" onPress={() => navigation.navigate('Login')} />
@@ -31,7 +30,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-end',
     alignItems: 'center',
-    backgroundColor: Colors.mediumGrey
+    backgroundColor: 'lightblue'
   },
   logoContainer: {
     position: 'absolute',
@@ -43,10 +42,11 @@ const styles = StyleSheet.create({
     height: 125
   },
   subtitle: {
-    fontSize: 24,
+    fontSize: 40,
     fontWeight: '600',
-    paddingVertical: 20,
-    color: Colors.primary
+    paddingVertical: '50%',
+    color: 'white',
+    justifyContent: 'center'
   },
   buttonContainer: {
     padding: 20,
